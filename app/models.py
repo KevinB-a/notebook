@@ -41,6 +41,7 @@ class User(UserMixin, db.Model):
     thoughts = db.relationship('Thought', backref='user', lazy=True)
 
     def __init__(self, last_name, first_name, pseudo, description, registering_date=None, password=None):
+        """methods for init fields in database"""
         self.last_name = last_name
         self.first_name = first_name
         self.pseudo = pseudo

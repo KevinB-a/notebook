@@ -111,7 +111,7 @@ def register():
 # BECAUSE THEY ARE RESERVED TO AUTHENTICATED MEMBERS ONLY
 # PARCE QU'ILS SONT RÉSERVÉS AUX MEMBRES AUTHENTIFIÉS UNIQUEMENT
 
-@app.route('/index/')
+@app.route('/index/')  # the path to the page
 @login_required
 def index():
     """Function to show the user thoughts by default"""

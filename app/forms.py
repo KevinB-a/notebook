@@ -42,7 +42,7 @@ class RegisterForm(FlaskForm):
     ])
     password_confirm = PasswordField('Confirmez le mot de passe', validators=[
         DataRequired(),
-        EqualTo('password', "Les deux mot de passes doivent être identiques")
+        EqualTo('password', "Les deux mot de passes doivent être identiques")  # EqualTo allows to check if two elements are identical
     ])
     submit = SubmitField("S'inscrire")
 
